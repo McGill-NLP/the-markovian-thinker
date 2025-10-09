@@ -1,0 +1,5 @@
+Copyright 2023-2024 Bytedance Ltd. and/or its affiliates 
+Copyright 2025 Mila and/or its affiliates
+Copyright 2025 Amirhossein Kazemnejad and/or its affiliates
+Copyright 2025 Milad Aghajohari and/or its affiliates
+Copyright 2025 Kamran Chitsaz and/or its affiliates
