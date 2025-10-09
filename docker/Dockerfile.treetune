@@ -1,0 +1,42 @@
+FROM verlai/verl:app-verl0.5-sglang0.4.9.post6-mcore0.12.2-te2.2
+
+# Update package sources and clean cache
+RUN /bin/sh -c \
+    "sed -Ei 's|https?://[^ ]+/ubuntu|http://archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list && \
+     sed -Ei 's|https?://[^ ]+/ubuntu|http://security.ubuntu.com/ubuntu|g' /etc/apt/sources.list && \
+     apt-get clean && \
+     apt-get update"
+
+# Install system dependencies
+RUN apt-get install -y --no-install-recommends \
+    curl \
+    unzip \
+    software-properties-common \
+    apt-transport-https \
+    ca-certificates \
+    gnupg \
+    lsb-release \
+    make \
+    bash-completion \
+    tree \
+    vim \
+    less \
+    tmux \
+    nmap \
+    nano \
+    wget \
+    build-essential \
+    libfreetype6-dev \
+    pkg-config \
+    graphviz \
+    git \
+    htop \
+    openssh-server \
+    openssh-client \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
+
+# Copy and install Python requirements
+COPY requirements_treetune.txt /requirements_treetune.txt
+RUN pip3 install --no-cache-dir -r /requirements_treetune.txt
+RUN rm -rf /requirements_treetune.txt
