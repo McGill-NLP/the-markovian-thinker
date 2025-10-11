@@ -274,7 +274,7 @@ The core parts of the Delethink implementation are:
 │   ├── trainer/
 │   │   └── config/             # Configuration files for different experiments
 ├── scripts/                    # Utility scripts
-├── delething_tracing_demo.py   # Single-file, self-contained Delethink tracing implementation
+├── delethink_tracing_demo.py   # Single-file, self-contained Delethink tracing implementation
 ├── INSTALLATION.md             # Installation guide
 ├── README.md                   # README for the codebase
 ```
