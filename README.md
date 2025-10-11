@@ -238,7 +238,7 @@ These scripts are tested on single 8xH100 GPU node. For multi-node training, ple
 TBD
 
 ### Delethink Tracing Demo
-We provide a single-file, self-contained Delethink tracing implementation in [`delething_tracing_demo.py`](./delething_tracing_demo.py).
+We provide a single-file, self-contained Delethink tracing implementation in [`delethink_tracing_demo.py`](./delethink_tracing_demo.py).
 You can use the following command to run the demo:
 ```bash
 python delething_tracing_demo.py
