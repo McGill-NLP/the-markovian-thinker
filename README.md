@@ -301,8 +301,8 @@ The core parts of the Delethink implementation are:
 - [`verl/workers/actor/dp_actor.py`](verl/workers/actor/dp_actor.py)
 
 **Rollout (SGLang/Inference Engine):**
-- [`verl/rollout/sglang_rollout/sglang_rollout.py`](verl/rollout/sglang_rollout/sglang_rollout.py)
-- [`verl/rollout/sglang_rollout/custom_sglang_rollout.py`](verl/rollout/sglang_rollout/custom_sglang_rollout.py) - SGLang with custom modifications
+- [`verl/workers/rollout/sglang_rollout/sglang_rollout.py`](verl/workers/rollout/sglang_rollout/sglang_rollout.py)
+- [`verl/workers/rollout/sglang_rollout/custom_sglang_rollout.py`](verl/workers/rollout/sglang_rollout/custom_sglang_rollout.py) - SGLang with custom modifications
 
 **Dataset:**
 - [`verl/utils/dataset/rl_dataset.py`](verl/utils/dataset/rl_dataset.py) - Dataset implementation
@@ -425,8 +425,8 @@ See `algorithm.delethink._target_` in [`verl/trainer/config/r1d-1.5b_deepscaler_
 - [`verl/workers/actor/dp_actor.py`](verl/workers/actor/dp_actor.py)
 
 **Rollout (SGLang/Inference Engine):**
-- [`verl/rollout/sglang_rollout/sglang_rollout.py`](verl/rollout/sglang_rollout/sglang_rollout.py)
-- [`verl/rollout/sglang_rollout/custom_sglang_rollout.py`](verl/rollout/sglang_rollout/custom_sglang_rollout.py) - SGLang with custom modifications
+- [`verl/workers/rollout/sglang_rollout/sglang_rollout.py`](verl/workers/rollout/sglang_rollout/sglang_rollout.py)
+- [`verl/workers/rollout/sglang_rollout/custom_sglang_rollout.py`](verl/workers/rollout/sglang_rollout/custom_sglang_rollout.py) - SGLang with custom modifications
 
 **Dataset:**
 - [`verl/utils/dataset/rl_dataset.py`](verl/utils/dataset/rl_dataset.py) - Dataset implementation
