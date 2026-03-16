@@ -52,6 +52,7 @@
 
 ## Updates
 
+* Jan 2026: 🎉 Accepted at ICLR 2026.
 * October 2025: 🎉 We release our paper, models and codebase. 
 
 ## Links
